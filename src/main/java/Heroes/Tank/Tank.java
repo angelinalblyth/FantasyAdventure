@@ -1,5 +1,6 @@
-package Heroes;
+package Heroes.Tank;
 
+import Heroes.Hero;
 import Items.Armour;
 import Items.Treasure;
 import Items.Weapon;
