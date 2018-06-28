@@ -1,6 +1,8 @@
 package Heroes.Healer;
 
+import Enemies.Enemy;
 import Heroes.Hero;
+import Interfaces.IDefend;
 import Specials.HealingTool;
 
 public class Healer extends Hero {
@@ -14,5 +16,14 @@ public class Healer extends Hero {
 
     public int getHealingStrength() {
         return healingTool.getHealingStrength();
+    }
+
+
+    public int enemyAttack() {
+        for(Enemy enemy: )
+    }
+
+    public int heroAttack(Hero hero, Enemy enemy) {
+
     }
 }

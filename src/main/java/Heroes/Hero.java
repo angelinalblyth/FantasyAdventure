@@ -1,10 +1,12 @@
 package Heroes;
 
+import Interfaces.IAttack;
+import Interfaces.IDefend;
 import Items.Treasure;
 
 import java.util.ArrayList;
 
-public abstract class  Hero {
+public abstract class  Hero implements IDefend, IAttack {
 
     private int HP;
     private int MP;
@@ -46,5 +48,9 @@ public abstract class  Hero {
 
     public void setMP(int MP) {
         this.MP = MP;
+    }
+
+    public void takeDamage(int attackValue) {
+        this.HP -= attackValue;
     }
 }

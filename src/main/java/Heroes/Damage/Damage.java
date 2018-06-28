@@ -1,5 +1,6 @@
 package Heroes.Damage;
 
+import Enemies.Enemy;
 import Heroes.Hero;
 import Specials.Minion;
 import Specials.Spell;
@@ -21,5 +22,13 @@ public class Damage extends Hero {
 
     public int getMinionDefenceStrength() {
         return minion.getDefenceStrength();
+    }
+
+    public void enemyAttack(Enemy enemy, Hero hero) {
+        
+    }
+
+    public void heroAttack(Hero hero, Enemy enemy) {
+
     }
 }
