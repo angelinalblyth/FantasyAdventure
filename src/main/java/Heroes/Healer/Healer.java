@@ -5,6 +5,8 @@ import Heroes.Hero;
 import Interfaces.IDefend;
 import Specials.HealingTool;
 
+import java.util.ArrayList;
+
 public class Healer extends Hero {
 
     private HealingTool healingTool;
@@ -19,11 +21,5 @@ public class Healer extends Hero {
     }
 
 
-    public int enemyAttack() {
-        for(Enemy enemy: )
-    }
 
-    public int heroAttack(Hero hero, Enemy enemy) {
-
-    }
 }

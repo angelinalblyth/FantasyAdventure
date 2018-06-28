@@ -1,6 +1,8 @@
 package Specials;
 
-public class Minion {
+import Interfaces.IDefend;
+
+public class Minion implements IDefend {
 
     private int defenceStrength;
 
@@ -12,5 +14,10 @@ public class Minion {
 
     public int getDefenceStrength() {
         return defenceStrength;
+    }
+
+
+    public void takeDamage(int attackValue) {
+        this.defenceStrength -= attackValue;
     }
 }

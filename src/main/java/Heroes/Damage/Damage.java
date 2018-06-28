@@ -5,6 +5,8 @@ import Heroes.Hero;
 import Specials.Minion;
 import Specials.Spell;
 
+import java.util.ArrayList;
+
 public class Damage extends Hero {
 
     private Spell spell;
@@ -24,11 +26,8 @@ public class Damage extends Hero {
         return minion.getDefenceStrength();
     }
 
-    public void enemyAttack(Enemy enemy, Hero hero) {
-        
+    public void applyDamageToMinion(int damage) {
+        minion.takeDamage(damage);
     }
 
-    public void heroAttack(Hero hero, Enemy enemy) {
-
-    }
 }

@@ -1,8 +1,11 @@
 package Heroes.Tank;
 
+import Enemies.Enemy;
 import Heroes.Hero;
 import Items.Armour;
 import Items.Weapon;
+
+import java.util.ArrayList;
 
 public class Tank extends Hero {
 
@@ -22,4 +25,6 @@ public class Tank extends Hero {
     public int getArmourStrength() {
         return this.armour.getArmourstrength();
     }
+
+
 }

@@ -6,7 +6,7 @@ import Items.Treasure;
 
 import java.util.ArrayList;
 
-public abstract class  Hero implements IDefend, IAttack {
+public abstract class  Hero implements IDefend {
 
     private int HP;
     private int MP;
