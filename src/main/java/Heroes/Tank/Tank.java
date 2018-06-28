@@ -2,10 +2,7 @@ package Heroes.Tank;
 
 import Heroes.Hero;
 import Items.Armour;
-import Items.Treasure;
 import Items.Weapon;
-
-import java.util.ArrayList;
 
 public class Tank extends Hero {
 

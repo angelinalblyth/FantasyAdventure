@@ -1,14 +1,28 @@
 package Items;
 
-public class Treasure {
+public enum Treasure {
 
-    private int goldValue;
+    BRONZECROWN(10, "Bronze Crown"),
+    SILVERCROWN(15, "Silver Crown"),
+    GOLDCROWN(25, "Gold Crown"),
+    SAPPHIRE(30, "Sapphire"),
+    RUBY(40, "Ruby"),
+    DIAMOND(60, "Diamond"),
+    CURSERELIC(10, "Curse Relic");
 
-    public Treasure(int goldValue) {
-        this.goldValue = goldValue;
+    private final int value;
+    private final String objectName;
+
+    Treasure(int value, String objectName) {
+        this.value = value;
+        this.objectName = objectName;
     }
 
-    public int getGoldValue() {
-        return goldValue;
+    public int getValue() {
+        return value;
+    }
+
+    public String getObjectName() {
+        return objectName;
     }
 }

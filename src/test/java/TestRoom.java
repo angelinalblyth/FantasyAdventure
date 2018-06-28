@@ -1,8 +1,6 @@
 import Dungeon.Room;
 import Enemies.Enemy;
 import Heroes.Damage.Warlock;
-import Heroes.Healer.Priest;
-import Heroes.Tank.Warrior;
 import Items.Treasure;
 import Specials.Minion;
 import Specials.Spell;
@@ -25,7 +23,7 @@ public class TestRoom {
         room = new Room();
         enemy = new Enemy("Rat", 10, 2, 5, 5);
         warlock = new Warlock(100, 100, 1, fireball, igor);
-        treasure = new Treasure(10);
+        treasure = Treasure.DIAMOND;
     }
 
     @Test
